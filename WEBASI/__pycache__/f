@@ -1,0 +1,17 @@
+<div class="username">
+
+                                                <input type="text" name="username" id="REGusername"
+                                                    placeholder="Enter user Name">
+                                            </div><!-- username-->
+
+                                            <div class="email">
+
+                                                <input type="email" name="username" id="REGemail"
+                                                    placeholder="Enter your email">
+                                            </div><!-- email-->
+
+                                            <div class="password">
+
+                                                <input type="password" name="password" id="REGpassword"
+                                                    placeholder="Enter Password">
+                                            </div><!-- password-->

@@ -1,0 +1,490 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', ;
+}
+
+/* ------------------- hide scroll bar----------------------------- */
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff000000;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+
+.page {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.788);
+    width: 100%;
+    height: 90vh;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: -1;
+
+}
+
+
+
+
+
+.logo {
+    width: 150px;
+    height: 50px;
+}
+
+
+.nav_a:hover {
+    text-decoration: overline;
+    font-weight: bold;
+}
+
+.login {
+    min-width: 100px;
+    
+    height: 40px;
+    background: linear-gradient(to top, rgb(17, 168, 228), blue);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(59, 19, 202, 0.24);
+}
+
+.login:hover {
+    background: linear-gradient(90deg, rgb(17, 168, 228), blue);
+}
+
+.nav_ul {
+    margin-left: 200px;
+}
+
+.nav_button {
+    color: blue;
+    border: none;
+
+}
+
+
+.my_container {
+    z-index: -1;
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social img {
+    width: 100px;
+    height: auto;
+
+}
+
+.social img:hover {
+    transform: rotatez(30deg);
+}
+
+.social a {
+    text-decoration: none;
+
+}
+
+
+
+
+
+/* ------------------- mobile menu----------------------------- */
+
+
+.mobile_menu {
+    position: absolute;
+    background-color: rgba(0, 0, 255, 0.651);
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    margin-left: 5px;
+    z-index: 100;
+    /* display: none; */
+    transition: 2s;
+    bottom: 1000px;
+
+}
+
+
+.mobile_menu h1 {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.mobile_menu ul {
+    position: relative;
+    top: 80px;
+}
+
+.mobile_menu ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 40px;
+
+
+}
+
+.mobile_menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.mobile_menu ul li a:hover {
+    border-top: blue 2px solid;
+}
+
+.mobile_menu ul li button {
+    margin-left: 50px;
+}
+
+.mobile_menu .menu_close {
+    float: right;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+/* ------------------- landing  page----------------------------- */
+
+
+/* .landing_view .description {
+    text-align: left;
+    max-width: 400px;
+} */
+
+.landing_view .get_started {
+
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background: linear-gradient(to top, rgb(17, 168, 228), blue);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(59, 19, 202, 0.24);
+
+}
+
+.landing_view .get_started:hover {
+
+    border-radius: 60px;
+
+}
+
+.landing_view .up {
+
+    position: relative;
+    top: -25px;
+}
+
+.landing_view .social {
+    position: relative;
+    top: -25px;
+}
+
+.landing_view  img.land{
+    
+    max-height: 450px;
+}
+
+/* ------------------- tech  page----------------------------- */
+
+.tech_view .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tech_view .page .head h1 {
+    font-size: 40px;
+}
+
+.tech_view .page h1 {
+    text-align: center;
+
+}
+
+.tech_view #carouselExampleControls {
+    width: 70%;
+    border-radius: 20px;
+    transition: 0.5s;
+    background-color: rgba(81, 92, 187, 0.308);
+}
+
+.tech_view #carouselExampleControls:hover {
+    box-shadow: 5px 5px 10px rgba(108, 118, 255, 0.096);
+    
+}
+
+.tech_view #carouselExampleControls img {
+    height: 400px;
+}
+
+
+/* --------------------------feature_view------------------------- */
+
+.feature_view .col-md-4 {
+
+    text-align: center;
+}
+
+.feature_view span i {
+    font-size: 40px;
+
+}
+
+.feature_view .container .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 200px;
+    border-radius: 30px;
+    
+
+}
+
+.feature_view .container .container:hover {
+    box-shadow: 10px 10px 10px 5px rgba(40, 40, 68, 0.205);
+}
+
+/* .f-margin-right{
+    margin-right: 10px;
+} */
+
+
+/* ----------------------------- back button---------------------- */
+
+.back {
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.144);
+
+}
+
+.back i {
+    transition: 1s;
+}
+
+.back:hover i {
+    transform: rotate(360deg);
+
+}
+
+body {
+    background-image: url('/static/image/d.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tech_view .page {
+    background-image: url('/static/image/tec_back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
+/* ----------------------------- fooer---------------------- */
+
+footer {
+    width: 100%;
+    height: 200px;
+    
+    background: linear-gradient(to bottom, rgb(17, 168, 228), blue);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.562);
+
+}
+
+
+footer  i{
+    font-size: 20px;
+    color: white;
+}
+footer .row_1{
+    height: 100%;
+    
+}
+
+footer .row .col-12 {
+    
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer ul li{
+    list-style-type: none;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+footer button{
+    min-width: 100px;
+    height: 40px;
+    background: linear-gradient(to top, rgb(17, 168, 228), rgba(0, 0, 255, 0.404));
+    border: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(59, 19, 202, 0.24);
+    margin-left: 40px;
+}
+
+footer span{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer img{
+    transform: translate(0,150%);
+}
+
+/* -------------------------login model--------------------------- */
+
+
+.landing_view .page .content {
+    
+    width: 100%;
+
+}
+.landing_view .page .loginCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.landing_view .page .loginCenter label{
+    display: none;
+}
+
+.landing_view .page .form_input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.landing_view .page .loginCenter input {
+    
+    border: none;
+    border-bottom: 1px grey solid;
+    margin-top: 30px;
+    width: 200px;
+    outline: none;
+    transition: 1s;
+}
+
+.landing_view .page .loginCenter input[type="submit"]{
+
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    transform: translate(110%,0);
+    background: linear-gradient(to top, rgb(17, 168, 228), blue);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(59, 19, 202, 0.24);
+
+
+}
+.landing_view .page .loginCenter input[placeholder]{
+    text-align: center;
+}
+
+
+
+
+.or hr{
+    width: 150px;
+}
+
+.or{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.landing_view .page .social-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.landing_view .page .social-login i{
+    font-size: 20px;
+}
+
+.landing_view .page .register button{
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px black solid;
+    transform: translate(100%,0);
+}
+
+
+ @media  (max-width:980px){ 
+
+.img_hide{
+    display: none;
+}
+ }
+
+ 

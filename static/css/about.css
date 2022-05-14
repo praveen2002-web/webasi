@@ -1,0 +1,18 @@
+.about_view .page .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_view .page .container p{
+    max-width: 400px;
+    text-align: justify;
+}
+
+.about_view .page img{
+    
+    width: 50%;
+    height: auto;
+    margin: 30px;
+}

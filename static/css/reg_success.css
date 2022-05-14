@@ -1,0 +1,61 @@
+.helptext,label{
+    display: none;
+} 
+
+
+#exampleModalLabel{
+    font-size: 50px;
+}
+
+.reg_success_view label {
+    display: none;
+}
+
+
+
+
+.reg_success_view input{
+    border: none;
+    outline: none;
+    border-bottom: 1px gray solid;
+    background-color: transparent;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.reg_success_view input[placeholder]{
+    text-align: center;
+}
+.reg_success_view input:focus{
+    border-bottom: 2px lightskyblue solid;
+}
+
+.reg_success_view .reg_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    height: auto;
+    background-color: rgba(202, 202, 202, 0.192);
+    border-radius: 20px;
+    
+}
+
+
+
+.reg_success_view .reg_form .submit input{
+    background-color: rgb(15, 172, 15);
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+
+}
+
+
+
+   

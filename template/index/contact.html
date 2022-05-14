@@ -1,0 +1,235 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- load main.css  -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <!-- load contact.css  -->
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+
+
+    <!-- load about.css  -->
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
+    <!-- load bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!--load animation-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!--  load font-awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+
+    <style>
+        ::-webkit-scrollbar {
+            width: 4px;
+            border-radius: 50%;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: lightskyblue;
+        }
+
+
+
+        body {
+            background-image: url('/static/image/d.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .preload{
+            background-image: url('/static/image/loading.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            z-index: 9999;
+        }
+    </style>
+
+
+    <title>contact</title>
+</head>
+
+<body onload="preload()">
+    <div class="preload" id="loading_contact">
+
+    </div>
+
+    <script>
+        function preload(){
+            document.getElementById('loading_contact').style.display="none";
+        };
+
+    </script>
+
+
+    <div class="container">
+
+
+        <section class="contact_view" data-aos="zoom-in" data-aos-duration="1200">
+             <div class="page">
+
+
+                <a href="/">
+                    <div class="back">
+                        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                    </div><!-- back-->
+                </a>
+
+
+
+                <h1 class="text-secondary    text-center  head">Contact us</h1>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12    col-md-6  ">
+
+                            <h3 class="text-secondary  ms-5">Send Message</h3>
+
+                            <div class="form   ms-5">
+
+                                <form action="" class="mt-4">
+                                    <div class="name ">
+                                        <h5 class="text-primary">Name</h5>
+                                        <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                                    </div><!-- name-->
+
+                                    <div class="email">
+                                        <h5 class="text-primary">E-mail</h5>
+                                        <input type="email" name="email" id="email"
+                                            placeholder="Enter Your E-mail Address">
+                                    </div><!-- name-->
+
+                                    <div class="massage">
+                                        <h5 class="text-primary">Message</h5>
+                                        <textarea name="massage" id="massage" cols="22" rows="3"
+                                            placeholder="Enter Your Massage"></textarea>
+                                    </div><!-- name-->
+
+                                    <div class="submit">
+                                        <input type="submit" value="SEND">
+                                    </div>
+
+                                </form>
+
+
+                            </div><!-- form -->
+
+                        </div><!-- col-6 -->
+
+
+                        <div class="col-12    col-md-6" social>
+
+                            <div class="row">
+
+                                <h3 class="text-secondary  ms-5">Social Media</h3>
+
+                                <div class="container">
+
+                                    <a href="#"><img src="{% static 'image/fb.png' %}" alt=""> </a>
+                                    <a href="#"><img src="{% static 'image/Twitter.png' %}" alt=""> </a>
+                                    <a href="#"><img src="{% static 'image/Instagram.png' %}" alt=""> </a> <br>
+                                    <a href="#"><img src="{% static 'image/Pinterest.png' %}" alt=""> </a>
+                                    <a href="#"><img src="{% static 'image/TikTok.png' %}" alt=""> </a>
+                                    <a href="#"><img src="{% static 'image/yt.png' %}" alt=""> </a>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="row   mt-5">
+                                <h3 class="text-secondary  ms-5">E-mail</h3>
+                                <a href="mailto:infowebasi@gmail.com" class="ms-md-5">
+                                    <span class="ms-5  fs-5">infowebasi@gmail.com</span>
+                                </a>
+
+
+                            </div>
+
+
+
+
+
+
+
+                        </div><!-- col-6 -->
+
+                    </div><!-- row -->
+                </div><!-- container -->
+
+
+
+
+
+            </div><!-- page -->
+
+        </section><!-- feature_view -->
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- load jqury-->
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- load animation  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- load main js file -->
+    <script defer src="{% static 'js/main.js' %}"></script>
+
+    <!-- load bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+.head{
+    position: relative;
+    top: -60px;
+    
+}
+
+.contact_view .page{
+    overflow-y: scroll;
+}
+
+.contact_view img{
+    width: 100px;
+    height: auto;
+}
+
+
+.contact_view img:hover{
+    transform:rotatez(30deg);
+}
+
+
+.form input,textarea{
+    background-color: transparent;
+    width: 75%;
+    border: none;
+    border-bottom: 1px solid blue;
+    margin-top: 10px;
+    outline: none;
+}
+
+.form h5{
+    margin-top: 20px;
+}
+
+.form input[type="submit"]{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    background: linear-gradient(to top, rgb(17, 168, 228), blue);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(59, 19, 202, 0.24);
+}
+
+.form input[type="submit"]:hover{
+    box-shadow: 5px 5px 30px  rgba(59, 19, 202, 0.24);
+}
+    
+
+
+.contact_view  a{
+    text-decoration: none;
+}
